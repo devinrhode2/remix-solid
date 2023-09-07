@@ -1,6 +1,13 @@
 {
+<<<<<<< HEAD
   "include": ["**/*.ts", "**/*.tsx"],
   "exclude": ["dist", "__tests__", "node_modules"],
+||||||| parent of 525376c7e (reduce duplication across packages/*/tsconfig.json files)
+  "exclude": ["__tests__"],
+=======
+  "exclude": ["__tests__"],
+  "extends": "../core.tsconfig.json",
+>>>>>>> 525376c7e (reduce duplication across packages/*/tsconfig.json files)
   "compilerOptions": {
     "lib": ["DOM", "DOM.Iterable", "ES2020"],
     "target": "ES2020",
@@ -8,13 +15,23 @@
     "skipLibCheck": true,
     "composite": true,
 
-    "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
     "jsx": "react",
+<<<<<<< HEAD
     "declaration": true,
     "emitDeclarationOnly": true,
     "rootDir": ".",
     "outDir": "../../build/node_modules/@remix-run/react/dist"
+||||||| parent of 525376c7e (reduce duplication across packages/*/tsconfig.json files)
+
+    "declaration": true,
+    "emitDeclarationOnly": true,
+
+    "outDir": "../../build/node_modules/@remix-run/react",
+    "rootDir": "."
+=======
+
+    "outDir": "../../build/node_modules/@remix-run/react",
+    "rootDir": "."
+>>>>>>> 525376c7e (reduce duplication across packages/*/tsconfig.json files)
   }
 }

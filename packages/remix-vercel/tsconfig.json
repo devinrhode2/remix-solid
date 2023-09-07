@@ -1,12 +1,14 @@
 {
   "include": ["**/*.ts"],
   "exclude": ["dist", "__tests__", "node_modules"],
+  "extends": "../core.tsconfig.json",
   "compilerOptions": {
     "lib": ["ES2019", "DOM.Iterable"],
     "target": "ES2019",
     "skipLibCheck": true,
     "composite": true,
 
+<<<<<<< HEAD
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "strict": true,
@@ -14,5 +16,20 @@
     "emitDeclarationOnly": true,
     "rootDir": ".",
     "outDir": "../../build/node_modules/@remix-run/vercel/dist"
+||||||| parent of 525376c7e (reduce duplication across packages/*/tsconfig.json files)
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+
+    "declaration": true,
+    "emitDeclarationOnly": true,
+
+    "outDir": "../../build/node_modules/@remix-run/vercel",
+    "rootDir": "."
+=======
+
+    "outDir": "../../build/node_modules/@remix-run/vercel",
+    "rootDir": "."
+>>>>>>> 525376c7e (reduce duplication across packages/*/tsconfig.json files)
   }
 }

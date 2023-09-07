@@ -1,6 +1,11 @@
 {
+<<<<<<< HEAD
   "include": ["**/*.ts"],
   "exclude": ["dist", "**/node_modules/**"],
+||||||| parent of 525376c7e (reduce duplication across packages/*/tsconfig.json files)
+=======
+  "extends": "../core.tsconfig.json",
+>>>>>>> 525376c7e (reduce duplication across packages/*/tsconfig.json files)
   "compilerOptions": {
     "lib": ["ES2019", "DOM", "DOM.Iterable"],
     "target": "ES2019",
@@ -8,13 +13,23 @@
     "skipLibCheck": true,
     "composite": true,
 
-    "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
     "resolveJsonModule": true,
+<<<<<<< HEAD
     "declaration": true,
     "emitDeclarationOnly": true,
     "rootDir": ".",
     "outDir": "../../build/node_modules/create-remix/dist"
+||||||| parent of 525376c7e (reduce duplication across packages/*/tsconfig.json files)
+
+    "declaration": true,
+    "emitDeclarationOnly": true,
+
+    "outDir": "../../build/node_modules/create-remix",
+    "rootDir": "."
+=======
+
+    "outDir": "../../build/node_modules/create-remix",
+    "rootDir": "."
+>>>>>>> 525376c7e (reduce duplication across packages/*/tsconfig.json files)
   }
 }

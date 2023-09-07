@@ -1,17 +1,36 @@
 {
   "include": ["**/*.ts"],
+<<<<<<< HEAD
   "exclude": ["dist", "__tests__", "node_modules"],
+||||||| parent of 525376c7e (reduce duplication across packages/*/tsconfig.json files)
+=======
+  "extends": "../core.tsconfig.json",
+>>>>>>> 525376c7e (reduce duplication across packages/*/tsconfig.json files)
   "compilerOptions": {
     "lib": ["ES2019"],
     "target": "ES2019",
     "types": ["@cloudflare/workers-types"],
     "composite": true,
 
+<<<<<<< HEAD
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "declaration": true,
     "emitDeclarationOnly": true,
+||||||| parent of 525376c7e (reduce duplication across packages/*/tsconfig.json files)
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+
+    "declaration": true,
+    "emitDeclarationOnly": true,
+
+    "outDir": "../../build/node_modules/@remix-run/cloudflare",
+=======
+
+    "outDir": "../../build/node_modules/@remix-run/cloudflare",
+>>>>>>> 525376c7e (reduce duplication across packages/*/tsconfig.json files)
     "rootDir": ".",
     "outDir": "../../build/node_modules/@remix-run/cloudflare/dist",
 

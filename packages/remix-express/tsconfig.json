@@ -1,12 +1,20 @@
 {
+<<<<<<< HEAD
   "include": ["**/*.ts"],
   "exclude": ["dist", "__tests__", "node_modules"],
+||||||| parent of 525376c7e (reduce duplication across packages/*/tsconfig.json files)
+  "exclude": ["__tests__"],
+=======
+  "exclude": ["__tests__"],
+  "extends": "../core.tsconfig.json",
+>>>>>>> 525376c7e (reduce duplication across packages/*/tsconfig.json files)
   "compilerOptions": {
     "lib": ["ES2019", "DOM.Iterable"],
     "target": "ES2019",
     "skipLibCheck": true,
     "composite": true,
 
+<<<<<<< HEAD
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "strict": true,
@@ -15,5 +23,20 @@
     "rootDir": ".",
     "outDir": "../../build/node_modules/@remix-run/express/dist",
     "composite": true
+||||||| parent of 525376c7e (reduce duplication across packages/*/tsconfig.json files)
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+
+    "declaration": true,
+    "emitDeclarationOnly": true,
+
+    "outDir": "../../build/node_modules/@remix-run/express",
+    "rootDir": "."
+=======
+
+    "outDir": "../../build/node_modules/@remix-run/express",
+    "rootDir": "."
+>>>>>>> 525376c7e (reduce duplication across packages/*/tsconfig.json files)
   }
 }
